@@ -1,0 +1,230 @@
+body {
+    background-image: linear-gradient(
+        rgb(59, 88, 93),
+        rgb(59, 88, 93)
+    );
+    height: 100vh;
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para dispositivos móveis */
+@media only screen and (max-width: 600px) {
+    #abaixo-da-capa {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .button {
+        font-size: 1em;
+    }
+
+    .button-navigate {
+        font-size: 2em;
+    }
+
+    .button-biggest {
+        font-size: 3em;
+    }
+
+    #cover {
+        width: 100%;
+        height: auto;
+    }
+
+    #playlist-title {
+        flex-direction: column;
+        margin: 1em 0 2em 0;
+    }
+
+    #song-Name {
+        font-size: 1.5em;
+    }
+
+    #progress-bar {
+        height: 2px;
+    }
+}
+
+/* Estilos para dispositivos médios */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .button {
+        font-size: 1.2em;
+    }
+
+    .button-navigate {
+        font-size: 2.5em;
+    }
+
+    .button-biggest {
+        font-size: 3.5em;
+    }
+
+    #cover {
+        width: 75%;
+        height: auto;
+    }
+
+    #playlist-title {
+        flex-direction: row;
+        margin: 1em 0 2em 0;
+    }
+
+    #song-Name {
+        font-size: 1.8em;
+    }
+
+    #progress-bar {
+        height: 2.5px;
+    }
+}
+
+/* Estilos para dispositivos grandes */
+@media only screen and (min-width: 1025px) {
+    .button {
+        font-size: 1.5em;
+    }
+
+    .button-navigate {
+        font-size: 3em;
+    }
+
+    .button-biggest {
+        font-size: 4em;
+    }
+
+    #cover {
+        width: 500px;
+        height: 450px;
+    }
+
+    #playlist-title {
+        flex-direction: row;
+        margin: 1em 0 3em 0;
+    }
+
+    #song-Name {
+        font-size: 2em;
+    }
+
+    #progress-bar {
+        height: 3px;
+    }
+}
+
+button {
+    background-color: inherit;
+    color: inherit;
+    border: none;
+    cursor: pointer;
+}
+
+#abaixo-da-capa {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2em 0 1em 0;
+}
+
+#botoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.button {
+    cursor: pointer;
+}
+
+.button-navigate {
+    font-size: 3em;
+}
+
+.button-biggest {
+    font-size: 4em;
+}
+
+#cover {
+    width: 500px;
+    height: 450px;
+}
+
+#playlist-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1em 0 3em 0;
+}
+
+#song-Name {
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+.light-color {
+    color: rgb(139, 153, 156);
+}
+
+#progress-bar {
+    background-color: rgb(139, 153, 156);
+    height: 3px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+#current-progress {
+    --progress: 0%;
+    height: inherit;
+    background-color: white;
+    width: var(--progress);
+    border-radius: inherit;
+}
+
+#progress-Container {
+    padding-bottom: 1em;
+    cursor: pointer;
+}
+
+.button-active {
+    color: green;
+}
+/* Estilos para o botão de like */
+.like-button {
+    background-color: transparent; /* Cor de fundo transparente */
+    color: white; /* Cor do texto */
+    border: none; /* Remover borda */
+    padding: 10px 20px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho do texto */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+    display: flex; /* Exibir como flexbox */
+    align-items: center; /* Alinhar itens no centro */
+}
+
+/* Estilos para o ícone dentro do botão */
+.like-button i {
+    margin-right: 10px; /* Espaçamento à direita do ícone */
+    font-size: 24px; /* Tamanho do ícone */
+    color: white; /* Cor inicial do coração */
+    transition: color 0.1s ease; /* Transição suave ao mudar a cor */
+}
+
+/* Estilos para quando o botão é clicado (ativo) */
+.like-button.active i {
+    color: #d32f2f; /* Cor do coração quando ativo */
+}
+
+/* Efeito de hover */
+.like-button:hover i {
+    color: white; /* Cor do coração ao passar o mouse */
+}
+
+
+
+
