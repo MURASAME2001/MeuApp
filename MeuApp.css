@@ -1,3 +1,11 @@
+
+Vamos fazer alguns ajustes no seu CSS para garantir que seu app funcione perfeitamente em dispositivos móveis. Vou revisar os estilos e fazer algumas melhorias específicas para dispositivos móveis.
+
+### Revisão do CSS
+
+Aqui estão algumas alterações e sugestões para aprimorar a responsividade do seu app:
+
+css
 /* Estilos gerais */
 body {
     background-image: linear-gradient(rgb(59, 88, 93), rgb(59, 88, 93));
@@ -243,4 +251,20 @@ button {
 
 /* Estilos para o ícone dentro do botão */
 .like-button i {
-    margin-right
+    margin-right: 10px;
+    font-size: 24px;
+    color: white;
+    transition: color 0.1s ease;
+}
+
+/* Estilos para quando o botão é clicado (ativo) */
+.like-button.active i {
+    color: #d32f2f;
+}
+
+/* Efeito de hover */
+.like-button:hover i {
+    color: white;
+}
+
+
