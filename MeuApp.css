@@ -1,8 +1,6 @@
+/* Estilos gerais */
 body {
-    background-image: linear-gradient(
-        rgb(59, 88, 93),
-        rgb(59, 88, 93)
-    );
+    background-image: linear-gradient(rgb(59, 88, 93), rgb(59, 88, 93));
     height: 100vh;
     color: white;
     font-family: sans-serif;
@@ -18,6 +16,7 @@ body {
     #abaixo-da-capa {
         flex-direction: column;
         align-items: flex-start;
+        padding: 10px;
     }
 
     .button {
@@ -40,6 +39,7 @@ body {
     #playlist-title {
         flex-direction: column;
         margin: 1em 0 2em 0;
+        text-align: center;
     }
 
     #song-Name {
@@ -48,6 +48,15 @@ body {
 
     #progress-bar {
         height: 2px;
+    }
+
+    button {
+        font-size: 1em;
+    }
+
+    #botoes {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -73,6 +82,7 @@ body {
     #playlist-title {
         flex-direction: row;
         margin: 1em 0 2em 0;
+        text-align: center;
     }
 
     #song-Name {
@@ -81,6 +91,15 @@ body {
 
     #progress-bar {
         height: 2.5px;
+    }
+
+    button {
+        font-size: 1.2em;
+    }
+
+    #botoes {
+        flex-direction: row;
+        justify-content: space-around;
     }
 }
 
@@ -106,6 +125,7 @@ body {
     #playlist-title {
         flex-direction: row;
         margin: 1em 0 3em 0;
+        text-align: center;
     }
 
     #song-Name {
@@ -115,6 +135,15 @@ body {
     #progress-bar {
         height: 3px;
     }
+
+    button {
+        font-size: 1.5em;
+    }
+
+    #botoes {
+        flex-direction: row;
+        justify-content: space-around;
+    }
 }
 
 button {
@@ -122,6 +151,7 @@ button {
     color: inherit;
     border: none;
     cursor: pointer;
+    font-size: inherit;
 }
 
 #abaixo-da-capa {
@@ -130,6 +160,7 @@ button {
     justify-content: space-between;
     align-items: center;
     margin: 2em 0 1em 0;
+    padding: 10px;
 }
 
 #botoes {
@@ -141,14 +172,15 @@ button {
 
 .button {
     cursor: pointer;
+    font-size: inherit;
 }
 
 .button-navigate {
-    font-size: 3em;
+    font-size: inherit;
 }
 
 .button-biggest {
-    font-size: 4em;
+    font-size: inherit;
 }
 
 #cover {
@@ -161,6 +193,7 @@ button {
     flex-direction: row;
     justify-content: center;
     margin: 1em 0 3em 0;
+    text-align: center;
 }
 
 #song-Name {
@@ -195,36 +228,19 @@ button {
 .button-active {
     color: green;
 }
+
 /* Estilos para o botão de like */
 .like-button {
-    background-color: transparent; /* Cor de fundo transparente */
-    color: white; /* Cor do texto */
-    border: none; /* Remover borda */
-    padding: 10px 20px; /* Espaçamento interno */
-    font-size: 16px; /* Tamanho do texto */
-    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
-    display: flex; /* Exibir como flexbox */
-    align-items: center; /* Alinhar itens no centro */
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 
 /* Estilos para o ícone dentro do botão */
 .like-button i {
-    margin-right: 10px; /* Espaçamento à direita do ícone */
-    font-size: 24px; /* Tamanho do ícone */
-    color: white; /* Cor inicial do coração */
-    transition: color 0.1s ease; /* Transição suave ao mudar a cor */
-}
-
-/* Estilos para quando o botão é clicado (ativo) */
-.like-button.active i {
-    color: #d32f2f; /* Cor do coração quando ativo */
-}
-
-/* Efeito de hover */
-.like-button:hover i {
-    color: white; /* Cor do coração ao passar o mouse */
-}
-
-
-
-
+    margin-right
