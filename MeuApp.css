@@ -40,7 +40,6 @@ body {
 
     #playlist-title {
         flex-direction: column;
-        margin-right: 30em;
         text-align: center;
         width: 100%; /* Garantir que o título ocupe a largura total */
     }
