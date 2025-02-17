@@ -51,6 +51,7 @@ body {
         padding: 0 10px;
         display: flex;
         overflow: hidden;
+        margin-left: 20px;
         justify-content: center;
         font-size: 1.2em; /* Reduzir o tamanho do texto da música */
     }
