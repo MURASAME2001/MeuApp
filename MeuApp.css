@@ -18,7 +18,7 @@ body {
         flex-direction: column;
         align-items: center;
         padding: 10px;
-        width: 100%; /* Garantir que os elementos ocupem a largura total da tela */
+        width: 50%; /* Garantir que os elementos ocupem a largura total da tela */
     }
 
     .button {
