@@ -9,7 +9,9 @@ body {
     align-items: center;
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Evitar rolagem horizontal */
+    display: flex;
+    justify-content: center;
+    overflow: hidden; /* Evitar rolagem horizontal */
 }
 
 /* Estilos para dispositivos móveis */
