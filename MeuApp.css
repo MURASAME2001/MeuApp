@@ -46,14 +46,9 @@ body {
     }
 
     #song-Name {
-       text-align: center;
-        width: 100%;
-        padding: 0 10px;
-        display: flex;
-        overflow: hidden;
-        margin-right: 60px;
-        justify-content: center;
-        font-size: 1.2em; /* Reduzir o tamanho do texto da música */
+       font-size: 2em;
+    font-weight: bolder;
+    margin-left: 3em;
     }
 
     #progress-bar {
