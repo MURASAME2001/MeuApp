@@ -40,11 +40,16 @@ body {
 
     #playlist-title {
         flex-direction: column;
+        margin: 1em 0;
         text-align: center;
         width: 100%; /* Garantir que o título ocupe a largura total */
     }
 
     #song-Name {
+       text-align: center;
+        width: 100%;
+        padding: 0 10px;
+        overflow: hidden;
         font-size: 1.2em; /* Reduzir o tamanho do texto da música */
     }
 
