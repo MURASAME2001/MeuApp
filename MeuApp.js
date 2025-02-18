@@ -16,6 +16,18 @@ const progressContainer = document.getElementById('progress-Container');
  let isShuffled = false;
  let isplaying = false;
 
+const sairporai ={
+   songName: 'sair por ai',
+   artist: 'knust',
+   file:'sair_por_ai'
+}
+
+const altamiramedo ={
+   songName: 'altamira medo',
+   artist: 'hiosaki,knust,pelé',
+   file: 'altamira_medo'
+}
+
 const deusadoolimpo ={
    songName: 'deusa do olimpo',
    artist: 'hiosaki',
@@ -37,7 +49,7 @@ const obraprima ={
    artist: 'ikki',
    file: 'obra_prima'
 }
-const originalplaylist = [falsapaixao,amanha,obraprima,deusadoolimpo];
+const originalplaylist = [falsapaixao,amanha,obraprima,deusadoolimpo,altamiramedo,sairporai];
 let sortedplaylist = [...originalplaylist];
 let index = 0;
 
